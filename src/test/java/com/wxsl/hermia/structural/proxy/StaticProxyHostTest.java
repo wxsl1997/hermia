@@ -29,7 +29,7 @@ class StaticProxyHostTest {
         InvocationHandler invocationHandler = new DynamicVisitHandler(visitHost);
 
         //动态创建代理对象
-        VisitHost dynamicProxy = (VisitHost) Proxy.newProxyInstance(VisitHost.class.getClassLoader(), new Class[]{VisitHost.class}, invocationHandler);
+        VisitHost dynamicProxy = (VisitHost) Proxy.newProxyInstance(VisitHost.class.getClassLoader(), VisitHost.class.getInterfaces(), invocationHandler);
 
         //调用代理对象
         dynamicProxy.visit();
