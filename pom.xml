@@ -10,7 +10,7 @@
 
     <properties>
         <cglib-version>3.2.12</cglib-version>
-        <guava-version>28.0-jre</guava-version>
+        <guava-version>29.0-jre</guava-version>
         <junit-version>5.5.2</junit-version>
         <lombok-version>1.18.8</lombok-version>
     </properties>
